@@ -1,0 +1,48 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Québec Emergency Rooms",
+        "description": "Wait time and occupancy data for Québec emergency rooms (official MSSS source). Installation selection happens after setup, via Configure."
+      }
+    },
+    "abort": {
+      "already_configured": "Already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Filters",
+        "description": "Choose which regions to include (leave empty = all regions). The next step lets you pick specific installations.",
+        "data": {
+          "regions": "Regions",
+          "location": "Reference location",
+          "num_nearest": "Number of nearest installations to pre-select (0 = disabled)",
+          "show_dashboard": "Generate an automatic dashboard",
+          "select_all": "Select all (within chosen regions) — then uncheck exceptions"
+        }
+      },
+      "installations": {
+        "title": "Installations to track",
+        "description": "Select the emergency rooms you want data for.",
+        "data": {
+          "installations": "Installations"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "temps_attente": {
+        "name": "Wait time"
+      },
+      "occupation": {
+        "name": "Occupancy rate"
+      },
+      "patients_24h": {
+        "name": "Patients over 24h"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Urgences Québec",
+        "description": "Données de temps d'attente et d'occupation des urgences du Québec (source officielle MSSS). La sélection des installations à suivre se fait après l'ajout, via Configurer."
+      }
+    },
+    "abort": {
+      "already_configured": "Déjà configuré"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Filtres",
+        "description": "Choisis les régions à inclure (laisser vide = toutes les régions). L'étape suivante permet de choisir les installations précises.",
+        "data": {
+          "regions": "Régions",
+          "location": "Position de référence",
+          "num_nearest": "Nombre d'installations les plus proches à présélectionner (0 = désactivé)",
+          "show_dashboard": "Générer un dashboard automatique",
+          "select_all": "Tout sélectionner (dans les régions choisies) — décoche ensuite les exceptions"
+        }
+      },
+      "installations": {
+        "title": "Installations à suivre",
+        "description": "Sélectionne les urgences dont tu veux les données.",
+        "data": {
+          "installations": "Installations"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "temps_attente": {
+        "name": "Temps d'attente"
+      },
+      "occupation": {
+        "name": "Taux d'occupation"
+      },
+      "patients_24h": {
+        "name": "Patients depuis plus de 24h"
+      }
+    }
+  }
+}
