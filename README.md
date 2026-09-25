@@ -20,10 +20,22 @@ A Home Assistant integration showing wait time, occupancy rate, and the number o
 - **Bilingue natif** — l'interface de configuration et les noms de capteurs suivent automatiquement la langue de ton profil Home Assistant (FR/EN), sans réglage séparé.
 - **Dashboard optionnel** — panneau dédié dans la barre latérale (activable/désactivable dans la config), pleine page, cartes triables par temps d'attente / occupation / nombre de patients (clic = croissant, reclic sur le même bouton = inverse), code couleur vert/jaune/rouge.
 
-### Capture d'écran
+### Captures d'écran
 
-<img src="docs/screenshot-temps-attente.png" width="500" alt="Panneau trié par temps d'attente">
-<img src="docs/screenshot-occupation.png" width="500" alt="Panneau trié par occupation">
+**Panneau dashboard, trié par temps d'attente (clic = croissant)** — pleine page, aucune barre latérale nécessaire pour tout voir d'un coup :
+<img src="docs/screenshot-1-temps-attente.png" width="800" alt="Panneau trié par temps d'attente">
+
+**Même panneau, trié par occupation (reclic sur le même bouton = décroissant)** — code couleur vert/jaune/rouge selon des seuils par métrique, et exemple de valeurs manquantes (`—`) en bas de liste :
+<img src="docs/screenshot-2-occupation.png" width="800" alt="Panneau trié par occupation">
+
+**Vue native Home Assistant** — chaque urgence est un appareil distinct avec son adresse civique, ses 3 capteurs, et l'icône dédiée de l'intégration :
+<img src="docs/screenshot-3-devices.png" width="800" alt="Liste des appareils dans Home Assistant">
+
+**Configuration — sélection de région(s) et position de référence** — carte interactive, multi-région, position par défaut = celle de ton serveur HA (déplaçable) :
+<img src="docs/screenshot-4-config-regions.png" width="800" alt="Écran de configuration - régions et position">
+
+**Configuration — proximité et options** — nombre d'installations les plus proches à présélectionner, toggle dashboard, toggle "Tout sélectionner" :
+<img src="docs/screenshot-5-config-options.png" width="800" alt="Écran de configuration - proximité et options">
 
 ### Installation
 
@@ -71,10 +83,22 @@ Ce projet n'est pas affilié au MSSS ni à Santé Québec, et n'est pas affilié
 - **Native bilingual support** — the config UI and sensor names automatically follow your Home Assistant profile language (FR/EN), no separate setting needed.
 - **Optional dashboard** — dedicated sidebar panel (toggle on/off in the config), full-page, cards sortable by wait time / occupancy / patient count (click = ascending, click the same button again = reverse), green/yellow/red color coding.
 
-### Screenshot
+### Screenshots
 
-<img src="docs/screenshot-temps-attente.png" width="500" alt="Panel sorted by wait time">
-<img src="docs/screenshot-occupation.png" width="500" alt="Panel sorted by occupancy">
+**Dashboard panel, sorted by wait time (click = ascending)** — full page, no sidebar needed to see everything at once:
+<img src="docs/screenshot-1-temps-attente.png" width="800" alt="Panel sorted by wait time">
+
+**Same panel, sorted by occupancy (click the same button again = descending)** — green/yellow/red color coding per metric threshold, and an example of missing values (`—`) at the bottom of the list:
+<img src="docs/screenshot-2-occupation.png" width="800" alt="Panel sorted by occupancy">
+
+**Native Home Assistant view** — each ER is its own device with its street address, 3 sensors, and the integration's dedicated icon:
+<img src="docs/screenshot-3-devices.png" width="800" alt="Device list in Home Assistant">
+
+**Configuration — region(s) and reference location** — interactive map, multi-region, default location = your HA server's (movable):
+<img src="docs/screenshot-4-config-regions.png" width="800" alt="Configuration screen - regions and location">
+
+**Configuration — proximity and options** — number of nearest installations to pre-select, dashboard toggle, "Select all" toggle:
+<img src="docs/screenshot-5-config-options.png" width="800" alt="Configuration screen - proximity and options">
 
 ### Installation
 
